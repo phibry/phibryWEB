@@ -10,39 +10,67 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="css/main.css" />
-    <title>About Me | UI/UX Designer & Photographer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <title>phibry | About Me</title>
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header-inner">
-      <div class="container">
-        <nav id="main-nav">
-          <img src="img/logo.png" alt="My Portfolio" id="logo" />
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="current">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div id="header">
+      <a href="index.html" class="logo">phibry</a>
+      <nav id="main-nav">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/philipp-rieser/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/phibry" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <div class="menu-wrap">
+              <input type="checkbox" name="" class="toggler" />
+              <div class="hamburger"><div></div></div>
+              <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li><a href="index.html" class="ham-a">Home</a></li>
+                      <li><a href="about.html" class="ham-a">About</a></li>
+                      <li>
+                        <a href="projects.html" class="ham-a">Projects</a>
+                      </li>
+                      <li><a href="contact.html" class="ham-a">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Section A: Info -->
-    <section id="about-a" class="text-center py-3">
-      <div class="container">
-        <h2 class="section-titel">About ME</h2>
-        <div class="bottom-line"></div>
+    <section id="about-a" class="text-center bg-dark py-4">
+      <div class="container py-4">
+        <h2 class="section-title">About Me</h2>
+        <div class="bottom-line-main"></div>
         <p class="lead">Let me tell you little about myself and what I do...</p>
         <div class="about-info">
-          <img src="img/about.jpg" alt="" class="bio-image" />
+          <img src="/images/phil.jpg" alt="" class="bio-image" />
           <div class="bio bg-light">
             <h4>Your Project Is In Safe Hands</h4>
             <p>
@@ -81,10 +109,10 @@
     </section>
 
     <!-- Section B: Progress Bars -->
-    <section id="about-b" class="bg-dark py-3">
-      <div class="container">
+    <section id="about-b" class="bg-dark py-4">
+      <div class="container py-4">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="bottom-line"></div>
+        <div class="bottom-line-secondary"></div>
         <h4>Photography:</h4>
         <div class="progress">
           <div style="width: 100%"></div>
@@ -112,85 +140,16 @@
       </div>
     </section>
 
-    <!-- Section C: Logos -->
-    <section id="about-c" class="py-4 bg-light">
-      <div class="container">
-        <div class="about-logos">
-          <img src="img/about-logos/logo-envato.png" alt="" />
-          <img src="img/about-logos/logo-wordpress.png" alt="" />
-          <img src="img/about-logos/logo-woocommerce.png" alt="" />
-          <img src="img/about-logos/logo-magento.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Section D: Testimonials -->
-    <section id="about-d" class="py-4">
-      <div class="container">
-        <h2 class="section-title">Testimonials</h2>
-        <p class="lead text-center">Take a look at my clients say...</p>
-        <div class="testimonials">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, perspiciatis assumenda quia hic ipsum quibusdam fuga
-              deleniti delectus distinctio corporis soluta, nemo at
-              consequuntur, corrupti aut tempore facere qui quisquam.
-            </p>
-            <ul>
-              <li><img src="img/testimonials/person1.jpg" alt="" /></li>
-              <li>Sam Smith, New York</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, perspiciatis assumenda quia hic ipsum quibusdam fuga
-              deleniti delectus distinctio corporis soluta, nemo at
-              consequuntur, corrupti aut tempore facere qui quisquam.
-            </p>
-            <ul>
-              <li><img src="img/testimonials/person2.jpg" alt="" /></li>
-              <li>Sara Williams, Michigan</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, perspiciatis assumenda quia hic ipsum quibusdam fuga
-              deleniti delectus distinctio corporis soluta, nemo at
-              consequuntur, corrupti aut tempore facere qui quisquam.
-            </p>
-            <ul>
-              <li><img src="img/testimonials/person3.jpg" alt="" /></li>
-              <li>Steve Thompson, Boston</li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, perspiciatis assumenda quia hic ipsum quibusdam fuga
-              deleniti delectus distinctio corporis soluta, nemo at
-              consequuntur, corrupti aut tempore facere qui quisquam.
-            </p>
-            <ul>
-              <li><img src="img/testimonials/person4.jpg" alt="" /></li>
-              <li>Jill Johnson, London</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer id="main-footer">
       <div class="footer-content container">
-        <p>Copyright &copy; 2020. All Rights Reserved</p>
         <div class="social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/philipp-rieser/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/phibry" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
       </div>
     </footer>

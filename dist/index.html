@@ -7,200 +7,101 @@
       src="https://kit.fontawesome.com/71e1dec467.js"
       crossorigin="anonymous"
     ></script>
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap" rel="stylesheet"> -->
-
+    <title>phibry | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>John Doe | UI/UX Designer & Photographer</title>
+    <!-- <link rel="stylesheet" href="css/menu.css" /> -->
   </head>
-
   <body>
-    <!-- Header -->
-    <header id="header-home">
-      <div class="container">
-        <nav id="main-nav">
-          <img src="img/logo.png" alt="My Portfolio" id="logo" />
-          <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-content">
-          <h1>
-            I am John The
-            <span
-              class="txt-type"
-              data-wait="3000"
-              data-words='["Photographer", "Designer", "UI/UX Dev"]'
-            ></span>
-          </h1>
-          <p class="lead">
-            I specialize in graphic design, UI/UX and photography
-          </p>
-          <a href="work.html" class="btn-light">View My Work</a>
-        </div>
+    <div id="header">
+      <a href="index.html" class="logo">phibry</a>
+      <nav id="main-nav">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/philipp-rieser/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/phibry" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <div class="menu-wrap">
+              <input type="checkbox" name="" class="toggler" />
+              <div class="hamburger"><div></div></div>
+              <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li><a href="index.html" class="ham-a">Home</a></li>
+                      <li><a href="about.html" class="ham-a">About</a></li>
+                      <li>
+                        <a href="projects.html" class="ham-a">Projects</a>
+                      </li>
+                      <li><a href="contact.html" class="ham-a">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="fullpage">
+      <div class="section s1">
+        <h1>
+          Philipp Rieser
+          <a href="#section3">clicky</a>
+        </h1>
+        <div class="bottom-line-secondary"></div>
       </div>
-    </header>
 
-    <!-- Section A: Specialize -->
-    <section id="home-a" class="text-center py-2">
-      <div class="container">
-        <h2 class="section-title">I Specialize In</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          Photography as well as creating digital masterpieces and UI/UX layouts
-          for websites and mobile applications
-        </p>
-        <div class="specials">
-          <div>
-            <i class="fas fa-file-alt fa-2x"></i>
-            <h3>Concepting</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              eveniet excepturi reiciendis ad quas provident magni ea
-              consequuntur reprehenderit tempora?
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-2x"></i>
-            <h3>UI/UX</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              eveniet excepturi reiciendis ad quas provident magni ea
-              consequuntur reprehenderit tempora?
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-2x"></i>
-            <h3>Visual Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              eveniet excepturi reiciendis ad quas provident magni ea
-              consequuntur reprehenderit tempora?
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-2x"></i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              eveniet excepturi reiciendis ad quas provident magni ea
-              consequuntur reprehenderit tempora?
-            </p>
-          </div>
-        </div>
+      <div class="section s2">
+        <h1>Projects</h1>
+        <div class="bottom-line-secondary"></div>
+        <div class="bottom-line-main"></div>
       </div>
-    </section>
 
-    <!-- Section B: Stats -->
-    <section id="home-b" class="text-center py-2">
-      <div class="stats">
-        <div>
-          <ul>
-            <li><i class="fas fa-users fa-3x"></i></li>
-            <li class="stats-title">Clients</li>
-            <li class="stats-number">100</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-award fa-3x"></i></li>
-            <li class="stats-title">Awards</li>
-            <li class="stats-number">3</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-            <li class="stats-title">Hours Worked</li>
-            <li class="stats-number">3500</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-code-branch fa-3x"></i></li>
-            <li class="stats-title">Projects Completed</li>
-            <li class="stats-number">135</li>
-          </ul>
-        </div>
+      <div class="section s3">
+        <h1>About & Contact</h1>
+        <div class="bottom-line-main"></div>
       </div>
-    </section>
+    </div>
 
-    <!-- Section C: Process -->
-    <section id="home-c" class="text-center py-2">
-      <div class="container">
-        <h2 class="section-title">My Creative Process</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          All of my UI/UX and design projects are based off of a personal
-          formula to get the result that I am looking for
-        </p>
-        <div class="process">
-          <div>
-            <i class="fas fa-file-alt fa-4x process-icon my-2">
-              <div class="process-step">1</div>
-            </i>
-            <h3>Discuss The Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              neque minus esse ex animi cumque.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-4x process-icon my-2">
-              <div class="process-step">2</div>
-            </i>
-            <h3>Brainstorming & Concept</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              neque minus esse ex animi cumque.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-              <div class="process-step">3</div>
-            </i>
-            <h3>UI/UX Planning</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              neque minus esse ex animi cumque.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-              <div class="process-step">4</div>
-            </i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              neque minus esse ex animi cumque.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-      <div class="footer-content container">
-        <p>Copyright &copy; 2020. All Rights Reserved</p>
-        <div class="social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Type Effect Tutorial:  https://www.youtube.com/watch?v=POX3dT-pB4E -->
-    <script src="js/typewriter.js"></script>
+    <script>
+      new fullpage("#fullpage", {
+        licenseKey: "1957D712-920E417C-8429F25B-4595FF4E",
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: "left",
+        anchors: ["section1", "section2", "section3"],
+        // navigationTooltips: ["Home", "About us", "Contact"],
+        showActiveTooltip: true,
+        scrollingSpeed: 750,
+        css3: false,
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,743 @@
+// Imports
+@import 'var';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// Header
+#header, #footer{
+  position: fixed;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  background: transparent;
+  z-index: 9;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    transition: color 0.2s;
+    z-index: 3;
+
+
+
+    &.logo {
+      text-decoration: none;
+      padding-left: 1.5rem;
+      color: $medium-color;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  #main-nav {
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 1rem 1.5rem;
+
+        a {
+          color: $medium-color;
+          transition: color 0.2s;
+    
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#header {
+  top: 0px;
+}
+
+#footer {
+  bottom: 0px;
+
+}
+
+// Fullpage background
+#fullpage {
+  // background: $bg-image;
+  background: $bg-gradient;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  .s1 {
+    // background: $bg-image;
+    background: $bg-gradient;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .s2 {
+    // background: $bg-image;
+    background: $bg-gradient;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .s3 {
+    // background: $bg-image;
+    background: $bg-gradient;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+// fullpage Navigation strips
+#fp-nav {
+  margin: 0;
+  -webkit-transform: ntranslate3d(0, -50%, 0);
+  transform: ntranslate3d(0, -50%, 0);
+  width: 40px;
+  left: 40px;
+  overflow: hidden;
+  z-index: 0;
+
+  ul li {
+    height: 3px;
+    margin: 0 0 40px;
+
+    a {
+      width: 24px;
+      height: 100%;
+      background: #fff;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+
+
+      span {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .active {
+      width: 40px;
+      background: $secondary-color !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  #fp-nav {
+    width: auto;
+    top: auto;
+    left: 50%;
+    bottom: 32px;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      padding-left: 35vw;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+  
+      li {
+        height: auto;
+        margin: 0 28px;
+  
+        a {
+          width: 3px;
+          height: 24px;
+        }
+  
+        .active {
+          width: 3px;
+          height: 40px;
+          background: $secondary-color !important;
+        }
+      }
+    }
+  }
+}
+
+
+// Small Devices
+@media screen and (max-width: 420px) {
+  #fp-nav {
+    bottom: 20px;
+
+    ul li {
+      margin: 0 12px;
+
+      a {
+        width: 2px;
+        height: 16px;
+      }
+
+      .active {
+        width: 2px;
+        height: 32px;
+        background: $secondary-color !important;
+      }
+    }
+  }
+}
+
+
+// Import Utilities for other than landing page
+@import 'utilities';
+
+// Grid item
+@import 'item_grid';
+
+
+// other .html-pages
+
+// About Page
+#about {
+  // About A
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas: 
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+      grid-gap: 1.2rem;
+    }
+
+    // Grid Area
+    .bio-image {
+      display: block;
+      margin: auto;
+      grid-area: bioimage;
+      max-width: 75%;
+      border-right: 3px solid $secondary-color;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+  
+    .award-1 {
+      grid-area: aw1;
+    }
+  
+    .award-2 {
+      grid-area: aw2;
+    }
+  
+    .award-3 {
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+
+  // About B
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      // Empty Progress-Bar
+      background: $medium-color;
+      border-radius: 50px;
+      margin-bottom: 0.6rem;
+      width: 50%;
+      
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+}
+
+// Contact
+#contact {
+  &-a {
+
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        'name email'
+        'subject phone'
+        'message message';
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+  
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+  
+      .subject-input {
+        grid-area: subject;
+      }
+  
+      .email-input {
+        grid-area: email;
+      }
+  
+      .phone-input {
+        grid-area: phone;
+      }
+  
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type='submit'] {
+      width: 50%;
+      background-color: $secondary-color;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-c {
+    text-align: center;
+  }
+}
+
+
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 0.5rem;
+      border: 2px $light-color solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+      background: $secondary-color;
+
+      &:hover {
+        background: $main-color;
+        border-color: $dark-color;;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $light-color;
+  }
+
+  a:hover {
+    color: $dark-color;
+  }
+}
+
+// Media Queries
+// Tablets & Smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  // Home
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 2px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bioimage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+
+    &-b {
+       div {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #home {
+    &-c {
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+
+// Hamburger
+/* We can use the variable in the style.css sheet */
+:root {
+  /* rgba for opacity */
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 1);
+  --menu-speed: 0.75s;
+}
+
+.menu-wrap {
+  /* position: fixed; */
+  /* top: 0;
+  left: 100px; */
+  z-index: 1;
+}
+
+/* Checkbox */
+.menu-wrap .toggler {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+/* Takes care of the box around the checkbox */
+.menu-wrap .hamburger {
+  position: relative;
+  /* top: 0;
+  left: 100px; */
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  /* padding: 1rem; */
+  /* border-radius: 50%; */
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  /* 100% width of the checkbox -> 50px */
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  /* For the spinning animation */
+  transition: all 1s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line down */
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+/* Toggler Animation 
+  Animation only when the checkbox is checked
+*/
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Roate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Overlay */
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.7s ease 0.2s;
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.7s ease;
+  border-radius: 50%;
+  flex: none;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #ccc;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+
+.ham-a {
+  display: inline-block;
+  color: #ccc !important;
+  transition: all 0.3s ease;
+}
+
+.ham-a:hover {
+  color: #FF4D5A !important;
+}
+
+.ham-a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF4D5A;
+  transition: width .3s;
+}
+
+.ham-a:hover::after {
+  width: 100%;
+}
+
