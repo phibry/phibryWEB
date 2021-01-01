@@ -113,12 +113,18 @@ const sr = ScrollReveal({
 sr.reveal(
   `.home__data, .home__img, 
          .projects__data,
-         .footer__content`,
+         .footer__content,
+         .section-title`,
   {
     origin: "top",
     interval: 200,
   }
 );
+
+sr.reveal(`.contact__container`, {
+  origin: "bottom",
+  interval: 200,
+});
 
 sr.reveal(`.about__img, .contact__content`, {
   origin: "left",

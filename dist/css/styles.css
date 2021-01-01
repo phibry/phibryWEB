@@ -105,7 +105,6 @@ img {
   height: auto;
 }
 
-/*========== CLASS CSS ==========*/
 .section {
   padding: 4rem 0 2rem;
 }
@@ -117,7 +116,6 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-/*========== LAYOUT ==========*/
 .l-main {
   overflow: hidden;
 }
@@ -334,6 +332,129 @@ img {
       justify-self: center;
 }
 
+.about__skills {
+  margin: 0;
+  padding: 0;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.about__skills .projects__data {
+  -webkit-box-shadow: 0 3px 12px rgba(65, 11, 16, 0.45);
+          box-shadow: 0 3px 12px rgba(65, 11, 16, 0.45);
+  padding: 1rem;
+}
+
+.about__skills .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__skills .box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.about__skills .box .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.about__skills .box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #5B5757;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.about__skills .box .percent svg circle.c11, .about__skills .box .percent svg circle.c21, .about__skills .box .percent svg circle.c31, .about__skills .box .percent svg circle.c41, .about__skills .box .percent svg circle.c51, .about__skills .box .percent svg circle.c61 {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.about__skills .box .percent svg circle.c12 {
+  stroke-dashoffset: calc(440 - (440*70) / 100);
+  stroke: #96B4CC;
+}
+
+.about__skills .box .percent svg circle.c22 {
+  stroke-dashoffset: calc(440 - (440*80) / 100);
+  stroke: #96B4CC;
+}
+
+.about__skills .box .percent svg circle.c32 {
+  stroke-dashoffset: calc(440 - (440*40) / 100);
+  stroke: #96B4CC;
+}
+
+.about__skills .box .percent svg circle.c42 {
+  stroke-dashoffset: calc(440 - (440*30) / 100);
+  stroke: #96B4CC;
+}
+
+.about__skills .box .percent svg circle.c52 {
+  stroke-dashoffset: calc(440 - (440*40) / 100);
+  stroke: #96B4CC;
+}
+
+.about__skills .box .percent svg circle.c62 {
+  stroke-dashoffset: calc(440 - (440*50) / 100);
+  stroke: #96B4CC;
+}
+
+.about__skills .box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.about__skills .box .percent .number h2 {
+  color: --body-color;
+  font-size: 48px;
+}
+
+.about__skills .box .percent .number h2 span {
+  font-size: 24px;
+}
+
+.about__skills .box .text {
+  padding: 10px 0 0;
+  color: --body-color;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 .projects__container {
   -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -355,6 +476,7 @@ img {
 
 .projects__img {
   width: 180px;
+  height: auto;
 }
 
 .projects__title {
@@ -368,6 +490,21 @@ img {
 
 .projects-p {
   margin-bottom: var(--mb-1);
+}
+
+.projects a .fas,
+.projects a .fab {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills {
+  background-color: var(--first-color-contact);
 }
 
 /* Contact */
@@ -387,6 +524,10 @@ img {
 .contact__description {
   text-align: center;
   margin-bottom: var(--mb-4);
+}
+
+.contact__description i {
+  padding-right: 10px;
 }
 
 .contact__direction {
@@ -558,6 +699,12 @@ img {
     background-color: var(--first-color-contact);
     padding: 2rem;
     border-radius: 1.5rem;
+  }
+  .skills {
+    background: none;
+  }
+  .skills .contact__container {
+    background-color: var(--first-color-contact);
   }
 }
 
