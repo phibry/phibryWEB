@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/71e1dec467.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>phibry | Contact Me</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <a href="index.html" class="logo">phibry</a>
+      <nav id="main-nav">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/philipp-rieser/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/phibry" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <div class="menu-wrap">
+              <input type="checkbox" name="" class="toggler" />
+              <div class="hamburger"><div></div></div>
+              <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li><a href="index.html" class="ham-a">Home</a></li>
+                      <li><a href="about.html" class="ham-a">About</a></li>
+                      <li>
+                        <a href="projects.html" class="ham-a">Projects</a>
+                      </li>
+                      <li><a href="contact.html" class="ham-a">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-4">
+      <div class="container py-4">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line-main m-left"></div>
+        <div class="bottom-line-secondary m-right"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Adress"
+              name="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark testbutton">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info-->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>philipp.rieser@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>+41 79 372 57 37</p>
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h3>Residence</h3>
+            <p>Winterhur</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
+      <div class="container">
+        <h1>Contact Me</h1>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/philipp-rieser/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/phibry" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

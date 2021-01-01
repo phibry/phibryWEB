@@ -3,105 +3,408 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/71e1dec467.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>phibry | Home</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
-      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
-      crossorigin="anonymous"
-    />
+
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="stylesheet" href="css/menu.css" /> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>phibry | Portfolio</title>
   </head>
   <body>
-    <div id="header">
-      <a href="index.html" class="logo">phibry</a>
-      <nav id="main-nav">
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/philipp-rieser/"
-              target="_blank"
-              ><i class="fab fa-linkedin-in fa-2x"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/phibry" target="_blank"
-              ><i class="fab fa-github fa-2x"></i
-            ></a>
-          </li>
-          <li>
-            <div class="menu-wrap">
-              <input type="checkbox" name="" class="toggler" />
-              <div class="hamburger"><div></div></div>
-              <div class="menu">
-                <div>
-                  <div>
-                    <ul>
-                      <li><a href="index.html" class="ham-a">Home</a></li>
-                      <li><a href="about.html" class="ham-a">About</a></li>
-                      <li>
-                        <a href="projects.html" class="ham-a">Projects</a>
-                      </li>
-                      <li><a href="contact.html" class="ham-a">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+    <!-- Scroll Top Arrow -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="fas fa-angle-up scrolltop__icon"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">phibry</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+              <!-- <i class="fas fa-toggle-on change-theme" id="theme-button"></i> -->
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <!-- <i class="bx bx-grid-alt"></i> -->
+          <i class="fas fa-dot-circle"></i>
+        </div>
       </nav>
-    </div>
-    <div id="fullpage">
-      <div class="section s1">
-        <h1>
-          Philipp Rieser
-          <a href="#section3">clicky</a>
-        </h1>
-        <div class="bottom-line-secondary"></div>
+    </header>
+
+    <main class="l-main">
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__img">
+            <img src="assets/img/phil.jpg" alt="" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Hi, I am Philipp Rieser</h1>
+            <p class="home__description">
+              In these end of the year holidays send a gift to your loved one
+              and share the happiness at Christmas.
+            </p>
+            <a href="#projects" class="button">Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <h2 class="section-title-center">
+              Hi, I am Philipp Rieser <br />
+              You Can Give
+            </h2>
+            <p class="about__description">
+              Sharing these holidays is the best gift you can give, give a
+              present or share your love with the people you love the most and
+              celebrate with great happiness.
+            </p>
+            <a href="#contact" class="button">Contact Me</a>
+          </div>
+
+          <div class="about__img">
+            <img src="assets/img/home.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects section bd-container" id="projects">
+        <h2 class="section-title">
+          Programming & Data Science <br />
+          Projects
+        </h2>
+        <div class="projects__container bd-grid">
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Time Series Analysis <br />
+              <i class="fab fa-r-project"></i>
+            </h3>
+            <p class="projects-p">ZHAW Project Work</p>
+            <a
+              href="projects/ProjectWork.pdf"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Web Development <br />
+              <i class="fab fa-css3 asd"></i><i class="fab fa-html5 asd"></i
+              ><i class="fab fa-js asd"></i>
+            </h3>
+            <p class="projects-p">Portfolio Website</p>
+            <a href="#home" class="button button-link" target="_blank">
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Finance <br /><i class="fab fa-python"></i>
+            </h3>
+            <p class="projects-p">CAPM</p>
+            <a
+              href="projects/MFCAPM.pdf"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration1.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Data Analysis <br /><i class="fab fa-r-project"></i>
+            </h3>
+            <p class="projects-p">FIFA World Cup</p>
+            <a
+              href="projects/StatisticsFootball.html"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration1.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Data Analysis <br /><i class="fab fa-r-project"></i>
+            </h3>
+            <p class="projects-p">Zurich Air Quality</p>
+            <a
+              href="projects/StatisticsAirQual.html"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Programming <br /><i class="fab fa-r-project"></i>
+            </h3>
+            <p class="projects-p">Shiny Application</p>
+            <a
+              href="https://phibry.shinyapps.io/Ferienzeitapp/?_ga=2.155841403.1915511292.1609140530-2012528580.1609140530"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Terminal Game <br />
+              <i class="fab fa-python"></i>
+            </h3>
+            <p class="projects-p">Tic Tac Toe</p>
+            <a
+              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/TicTacToe"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              Terminal Game <br />
+              <i class="fab fa-python"></i>
+            </h3>
+            <p class="projects-p">Black Jack</p>
+            <a
+              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/BlackJack"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              GUI <br /><i class="fab fa-python"></i>
+            </h3>
+            <p class="projects-p">Bank Account</p>
+            <a
+              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/BlackJack"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="projects__data">
+            <img
+              src="assets/img/decoration3.png"
+              alt=""
+              class="projects__img"
+            />
+            <h3 class="projects__title">
+              GUI <br /><i class="fab fa-python"></i>
+            </h3>
+            <p class="projects-p">Twitter Winner App</p>
+            <a
+              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/BlackJack"
+              class="button button-link"
+              target="_blank"
+            >
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <div class="contact__container bd-container bd-grid">
+          <div class="contact__content">
+            <h2 class="section-title-center contact__title">Contact Me</h2>
+            <p class="contact__description">
+              Start giving away before the holidays are over. Write the home
+              address of the person who will contact the gift.
+            </p>
+            <form
+              method="POST"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+            >
+              <div class="contact__direction">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="contact__input"
+                  name="name"
+                />
+              </div>
+              <div class="contact__direction">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="contact__input"
+                  name="email"
+                />
+              </div>
+              <div class="contact__direction">
+                <input
+                  type="text"
+                  placeholder="Message"
+                  class="contact__input"
+                  name="message"
+                />
+                <button type="submit" class="button">Submit</button>
+              </div>
+
+              <div class="contact__direction">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            </form>
+          </div>
+
+          <img src="assets/img/contact.svg" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container bd-container bd-grid">
+        <!-- <div class="footer__content">
+          <h3 class="footer__title">
+            <a href="#" class="footer__logo">Christmas Gift</a>
+          </h3>
+          <p class="footer__description">
+            I sent a gift and it gives <br />
+            happiness
+          </p>
+        </div> -->
+
+        <!-- <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Pricing </a></li>
+            <li><a href="#" class="footer__link">Discounts</a></li>
+            <li><a href="#" class="footer__link">Shipping mode</a></li>
+          </ul>
+        </div> -->
+
+        <div class="footer__content">
+          <h3 class="footer__title">phibry</h3>
+          <ul>
+            <li><a href="#about" class="footer__link">About Me</a></li>
+            <li><a href="#projects" class="footer__link">My Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Social</h3>
+          <a
+            href="https://www.linkedin.com/in/philipp-rieser/"
+            class="footer__social"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/phibry"
+            target="_blank"
+            class="footer__social"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
       </div>
 
-      <div class="section s2">
-        <h1>Projects</h1>
-        <div class="bottom-line-secondary"></div>
-        <div class="bottom-line-main"></div>
-      </div>
+      <p class="footer__copy">&#169; 2021 phibry</p>
+    </footer>
 
-      <div class="section s3">
-        <h1>About & Contact</h1>
-        <div class="bottom-line-main"></div>
-      </div>
-    </div>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
-      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      new fullpage("#fullpage", {
-        licenseKey: "1957D712-920E417C-8429F25B-4595FF4E",
-        autoScrolling: true,
-        navigation: true,
-        navigationPosition: "left",
-        anchors: ["section1", "section2", "section3"],
-        // navigationTooltips: ["Home", "About us", "Contact"],
-        showActiveTooltip: true,
-        scrollingSpeed: 750,
-        css3: false,
-      });
-    </script>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
