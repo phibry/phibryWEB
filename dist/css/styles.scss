@@ -203,7 +203,18 @@ img {
 }
 
 // Home
-.home{
+.home {
+
+    // &__data {
+    //     position: relative;
+
+    //     .button {
+    //         margin: 1rem 0 0 0;
+    //         position: absolute;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //     }
+    // }
     &__container{
         row-gap: .5rem;
     }
@@ -258,9 +269,7 @@ img {
 
 // About
 .about {
-    &__data{
-        text-align: center;
-    }
+
     &__description{
         margin-bottom: var(--mb-2);
     }
@@ -532,13 +541,13 @@ img {
 @media screen and (max-width: 359px){
 
 
+
     .home__img,
     .about__img,
     .contact__img{
         width: 100%;
     }
 }
-
 
 @media screen and (min-width: 576px){
     .home__container, 
@@ -548,7 +557,7 @@ img {
         align-items: center;
     }
 
-    .home{
+    .home {
         &__container{
             padding: 5rem 0 0;
         }
@@ -572,13 +581,6 @@ img {
     .about__img{
         order: -1;
     }
-
-    // #skills {
-    //     .contact__container {
-    //         background-color: var(--first-color-contact);
-    //     }
-    // }
-
 }
 
 @media screen and (min-width: 768px){
