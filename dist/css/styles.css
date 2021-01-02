@@ -436,7 +436,7 @@ img {
 }
 
 .about__skills .box .percent .number h2 {
-  color: --body-color;
+  color: var(--title-color);
   font-size: 48px;
 }
 
@@ -446,7 +446,7 @@ img {
 
 .about__skills .box .text {
   padding: 10px 0 0;
-  color: --body-color;
+  color: var(--title-color);
   font-weight: 700;
   letter-spacing: 1px;
 }
