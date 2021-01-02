@@ -205,6 +205,7 @@ img {
 // Home
 .home {
 
+
     // &__data {
     //     position: relative;
 
@@ -469,6 +470,15 @@ img {
 
         i {
             padding-right: 10px;
+        }
+
+        a {
+            font-size: 2rem;
+            color: #fff;
+
+            &:hover {
+                color: var(--first-color);
+            }
         }
 
     }

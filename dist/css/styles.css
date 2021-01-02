@@ -526,6 +526,15 @@ img {
   padding-right: 10px;
 }
 
+.contact__description a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.contact__description a:hover {
+  color: var(--first-color);
+}
+
 .contact__direction {
   display: -webkit-box;
   display: -ms-flexbox;
