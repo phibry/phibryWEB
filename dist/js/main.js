@@ -1,4 +1,4 @@
-/*==================== SHOW MENU ====================*/
+// Show Menu
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
@@ -13,7 +13,7 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav-menu");
 
-/*==================== REMOVE MENU MOBILE ====================*/
+// Remove Menu Mobile
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -23,7 +23,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+// Scroll Section Active Link
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -47,7 +47,7 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
+// Change Background Header
 function scrollHeader() {
   const nav = document.getElementById("header");
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
@@ -56,7 +56,7 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== SHOW SCROLL TOP ====================*/
+// Show Scroll Header
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -65,7 +65,7 @@ function scrollTop() {
 }
 window.addEventListener("scroll", scrollTop);
 
-/*==================== DARK LIGHT THEME ====================*/
+// Theme
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-toggle-right";
@@ -103,10 +103,10 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
+// Scroll Reveal Animation
 const sr = ScrollReveal({
-  distance: "30px",
-  duration: 1800,
+  distance: "70px",
+  duration: 1200,
   reset: true,
 });
 
