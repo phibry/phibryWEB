@@ -533,7 +533,8 @@ img {
     &__social {
         font-size: 1.5rem;
         color: var(--text-color);
-        margin-right: var(--mb-3);
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
 
         &:hover{
             color: var(--first-color);
