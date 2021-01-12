@@ -612,11 +612,16 @@ img {
   color: var(--first-color);
 }
 
+.footer__social-icon {
+  margin-top: 25vh;
+  text-align: center;
+}
+
 .footer__copy {
   text-align: center;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 359px) {
@@ -625,13 +630,13 @@ img {
   .contact__img {
     width: 100%;
   }
-  .footer__copy {
+  .footer__social-icon {
     margin-top: 40vh;
   }
 }
 
 @media screen and (min-width: 359px) {
-  .footer__copy {
+  .footer__social-icon {
     margin-top: 40vh;
   }
 }
@@ -669,7 +674,7 @@ img {
         -ms-flex-order: -1;
             order: -1;
   }
-  .footer__copy {
+  .footer__social-icon {
     margin-top: 40vh;
   }
 }
@@ -723,7 +728,7 @@ img {
   .skills .contact__container {
     background-color: var(--first-color-contact);
   }
-  .footer__copy {
+  .footer__social-icon {
     margin-top: 37vh;
   }
 }
@@ -744,7 +749,7 @@ img {
     -webkit-column-gap: 5rem;
             column-gap: 5rem;
   }
-  .footer__copy {
+  .footer__social-icon {
     margin-top: 35vh;
   }
 }

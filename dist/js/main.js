@@ -105,8 +105,8 @@ themeButton.addEventListener("click", () => {
 
 // Scroll Reveal Animation
 const sr = ScrollReveal({
-  distance: "70px",
-  duration: 1200,
+  distance: "40px",
+  duration: 1000,
   reset: true,
 });
 
