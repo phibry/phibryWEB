@@ -184,8 +184,19 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
+.nav__logo {
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.2, 1, 0.2, 1);
+  transition: -webkit-transform 750ms cubic-bezier(0.2, 1, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.2, 1);
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
 .nav__logo:hover {
   color: var(--first-color);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: color;
+          transform: color;
 }
 
 .nav__link {
@@ -497,6 +508,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.projects a .fa-plus-circle {
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.projects a .fa-plus-circle:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .skills {

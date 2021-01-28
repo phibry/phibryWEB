@@ -130,8 +130,11 @@ img {
         font-weight: var(--font-semi-bold);
     }
     &__logo{
+        transition: transform 750ms cubic-bezier(0.2, 1, 0.2, 1);
         &:hover{
             color: var(--first-color);
+            transform: scale(1.1);
+            transform: color;
         }
     }
     &__link{
@@ -445,6 +448,14 @@ img {
             left: 15px;
             text-align: center;
             justify-content: center;
+        }
+
+        .fa-plus-circle {
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                transform: rotate(45deg);
+            }
         }
     }
 
