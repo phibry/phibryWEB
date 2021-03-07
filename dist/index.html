@@ -2,520 +2,369 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
 
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/71e1dec467.js"
       crossorigin="anonymous"
     ></script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>phibry | Portfolio</title>
   </head>
-  <body>
+  <body class="light">
     <!-- Scroll Top Arrow -->
-    <a href="#" class="scrolltop" id="scroll-top">
-      <i class="fas fa-angle-up scrolltop__icon"></i>
+    <a href="#" class="scroll-top">
+      <i class="fas fa-angle-up scroll-top-icon"></i>
     </a>
+    <!-- Header & Navigation -->
+    <header id="header">
+      <nav class="nav container">
+        <a href="" class="nav-logo">phibry</a>
 
-    <!-- Header -->
-    <header class="l-header" id="header">
-      <nav class="nav bd-container">
-        <a href="#" class="nav__logo">phibry</a>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">Projects</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li>
-              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+            <li class="nav-item">
+              <i class="fas fa-toggle-on" id="theme-button"></i>
             </li>
           </ul>
         </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="fas fa-dot-circle"></i>
+        <div id="nav-toggle" class="nav-toggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
         </div>
       </nav>
     </header>
 
-    <main class="l-main">
+    <main>
       <!-- Home -->
       <section class="home" id="home">
-        <div class="home__container bd-container bd-grid">
-          <div class="home__img">
+        <div class="container home-container">
+          <div class="home-img">
             <img src="img/phil.jpg" alt="" />
           </div>
 
-          <div class="home__data">
-            <h1 class="home__title">
-              Hi, I am <br />
-              Philipp Bryan Rieser
-            </h1>
-            <p class="home__description">
-              I am studying Engineering and Management at ZHAW and I am in my
-              final year. The focus is in the areas of business mathematics and
-              statistics. <br />
-              I am looking for an opportunity to apply my learned skills in a
-              professional setting.
+          <div class="home-content">
+            <p class="home-p">Hello</p>
+            <h1 class="home-title">I am Philipp Bryan Rieser</h1>
+            <p class="home-p">
+              I am currently studying engineering and am in my last semester. I
+              am interested in technology and especially how it affects all of
+              our daily lives.
             </p>
-            <a href="#projects" class="button">Projects</a>
+            <br />
+            <p class="home-p">
+              In my studies, I am learning how data can be used as an important
+              decision-making tool and I am looking for a challenge to apply
+              these skills in a professional environment.
+            </p>
+            <a href="#projects" class="btn">My Projects</a>
           </div>
         </div>
       </section>
 
       <!-- About -->
-      <section class="about section bd-container" id="about">
-        <div class="about__container bd-grid">
-          <div class="about__data">
-            <h2 class="section-title-center">About Me</h2>
-            <p class="about__description">
-              I am interested in technology and in a sustainable future.
-              <br>
-              In addition to my studies, I am actively involved in sports and continue my education in the areas of Web Development and Data Science out of my own interest.
-            </p>
-            <a href="#contact" class="button">Contact Me</a>
+      <section class="about" id="about">
+        <div class="container about-container">
+          <div class="about-img">
+            <img src="img/life.svg" />
           </div>
 
-          <div class="about__img">
-            <img src="img/home.svg" alt="" />
+          <div class="about-content">
+            <p class="pp">A bit</p>
+            <h1 class="about-title">About Me</h1>
+            <ul class="about-list">
+              <li class="about-a life active-a">Life</li>
+              <li class="about-a edu">Education</li>
+              <li class="about-a exp">Experience</li>
+            </ul>
+            <p id="about-p" class="about-p show">
+              I am interested in technology and in a sustainable future. In
+              addition to my studies, I am actively involved in sports and
+              continue my education in the areas of Web Development and Data
+              Science.
+            </p>
+            <a href="add/Lebenslauf_P.Rieser.pdf" target="blank" class="btn"
+              >Download CV</a
+            >
           </div>
         </div>
-
       </section>
-      <section class="skills section" id="skills">
-        <div class="contact__container bd-container">
-          <h2 class="section-title-center contact__title section-title">
-            Technical Skills
-          </h2>
-          <div class="about__skills projects__container bd-grid"">
 
-            <div class="projects__data">
-              <div class="box">
-                <div class="percent">
-                  <svg>
-                    <circle class="c11" cx="70" cy="70" r="70"></circle>
-                    <circle class="c12" cx="70" cy="70" r="70"></circle>
-                  </svg>
-                  <div class="number">
-                    <h2><i class="fab fa-python"></i></h2>
-                  </div>
-                </div>
-                <h2 class="text">Python</h2>
-              </div>
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <div class="container skills-container">
+          <h1 class="skills-title">Technical Skills</h1>
+          <div class="skills-cards">
+            <!-- Skills 1 -->
+            <div class="skills-card">
+              <div
+                class="skills-img"
+                style="background-image: url('img/code.svg')"
+              ></div>
+              <h3 class="skills-field">Web Development</h3>
+              <ul class="skills-ul">
+                <li>CSS, HTML, JavaScript</li>
+                <li>Sass</li>
+                <li>Deployment</li>
+              </ul>
             </div>
 
-            <div class="projects__data">
-              <div class="box">
-                <div class="percent">
-                  <svg>
-                    <circle class="c21" cx="70" cy="70" r="70"></circle>
-                    <circle class="c22" cx="70" cy="70" r="70"></circle>
-                  </svg>
-                  <div class="number">
-                    <h2><i class="fab fa-r-project"></i></h2>
-                  </div>
-                </div>
-                <h2 class="text">R</h2>
-              </div>
+            <!-- Skills 2 -->
+            <div class="skills-card">
+              <div
+                class="skills-img"
+                style="background-image: url('img/data.svg')"
+              ></div>
+              <h3 class="skills-field">Data Science</h3>
+              <ul class="skills-ul">
+                <li>Python, R</li>
+                <li>Data Analysis, Mining, Visualization</li>
+                <li>Machine Learning</li>
+              </ul>
             </div>
 
-            <div class="projects__data">
-              <div class="box">
-                <div class="percent">
-                  <svg>
-                    <circle class="c31" cx="70" cy="70" r="70"></circle>
-                    <circle class="c32" cx="70" cy="70" r="70"></circle>
-                  </svg>
-                  <div class="number">
-                    <h2><i class="fas fa-database"></i></h2>
-                  </div>
-                </div>
-                <h2 class="text">SQL</h2>
-              </div>
-            </div>
-
-            <div class="projects__data">
-              <div class="box">
-                <div class="percent">
-                  <svg>
-                    <circle class="c41" cx="70" cy="70" r="70"></circle>
-                    <circle class="c42" cx="70" cy="70" r="70"></circle>
-                  </svg>
-                  <div class="number">
-                    <h2><i class="fas fa-code"></i></h2>
-                  </div>
-                </div>
-                <h2 class="text">Web Development</h2>
-              </div>
-            </div>
-            
-
-            <div class="projects__data">
-              <div class="box">
-                <div class="percent">
-                  <svg>
-                    <circle class="c51" cx="70" cy="70" r="70"></circle>
-                    <circle class="c52" cx="70" cy="70" r="70"></circle>
-                  </svg>
-                  <div class="number">
-                    <h2><i class="fas fa-terminal"></i></h2>
-                  </div>
-                </div>
-                <h2 class="text">Terminal</h2>
-              </div>
-            </div>
-
-            <div class="projects__data">
-              <div class="box">
-                <div class="percent">
-                  <svg>
-                    <circle class="c61" cx="70" cy="70" r="70"></circle>
-                    <circle class="c62" cx="70" cy="70" r="70"></circle>
-                  </svg>
-                  <div class="number">
-                    <h2><i class="fab fa-github"></i></h2>
-                  </div>
-                </div>
-                <h2 class="text">Github</h2>
-              </div>
+            <!-- Skills 3 -->
+            <div class="skills-card">
+              <div
+                class="skills-img"
+                style="background-image: url('img/tools.svg')"
+              ></div>
+              <h3 class="skills-field">Tools</h3>
+              <ul class="skills-ul">
+                <li>MySQL</li>
+                <li>MS SQL-Server</li>
+                <li>Visual Studio Code</li>
+                <li>R-Studio</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section class="projects section bd-container" id="projects">
-        <h2 class="section-title">
-          Programming & Data Science <br />
-          Projects
-        </h2>
-        <div class="projects__container bd-grid">
-          <div class="projects__data">
-            <img src="img/project.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Time Series Analysis <br />
-              <i class="fab fa-r-project"></i>
-            </h3>
-            <p class="projects-p">ZHAW Project Work</p>
-            <a
-              href="projects/ProjectWork.pdf"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
+      <section class="projects" id="projects">
+        <div class="container projects-container">
+          <h2 class="projects-title">Programming & Data Science Projects</h2>
+          <div class="projects-cards">
+            <!-- Project 1 -->
+            <div class="projects-card">
+              <div
+                class="card-img"
+                style="background-image: url('img/card1.svg')"
+              ></div>
+              <h3 class="card-field">Time Series Analysis</h3>
+              <div class="card-icon">
+                <i class="fab fa-r-project"></i>
+              </div>
+              <p class="card-title">ZHAW Project Work</p>
+              <a
+                href="add/ProjectWork.pdf"
+                class="card-button button"
+                target="_blank"
+              >
+                <i class="fas fa-plus-circle fa-2x"></i>
+              </a>
+            </div>
 
-          <div class="projects__data">
-            <img src="img/data.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Data Mining & Analysis<br />
-              <i class="fab fa-r-project"></i>
-            </h3>
-            <p class="projects-p">Colore & Disegno</p>
-            <a href="projects/Hausaufgabe.pdf" class="button button-link" target="_blank">
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
+            <!-- Project 2 -->
+            <div class="projects-card">
+              <div
+                class="card-img"
+                style="background-image: url('img/card2.svg')"
+              ></div>
+              <h3 class="card-field">Data Mining</h3>
+              <div class="card-icon">
+                <i class="fab fa-r-project"></i>
+              </div>
+              <p class="card-title">Colore & Disegno</p>
+              <a href="add/Hausaufgabe.pdf" class="card-button" target="_blank">
+                <i class="fas fa-plus-circle fa-2x"></i>
+              </a>
+            </div>
 
-          <div class="projects__data">
-            <img src="img/website.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Web Development <br />
-              <i class="fab fa-css3 asd"></i><i class="fab fa-html5 asd"></i
-              ><i class="fab fa-js asd"></i>
-            </h3>
-            <p class="projects-p">Portfolio Website</p>
-            <a href="#home" class="button button-link" target="_blank">
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
+            <!-- Project 3 -->
+            <div class="projects-card">
+              <div
+                class="card-img"
+                style="background-image: url('img/card3.svg')"
+              ></div>
+              <h3 class="card-field">Web Development</h3>
+              <div class="card-icon">
+                <i class="fab fa-css3 asd"></i><i class="fab fa-html5 asd"></i
+                ><i class="fab fa-js asd"></i>
+              </div>
+              <p class="card-title">Portfolio Website</p>
+              <a href="#" class="card-button" target="_blank">
+                <i class="fas fa-plus-circle fa-2x"></i>
+              </a>
+            </div>
 
-          <div class="projects__data">
-            <img src="img/finance.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Finance <br /><i class="fab fa-python"></i>
-            </h3>
-            <p class="projects-p">CAPM</p>
-            <a
-              href="projects/MFCAPM.pdf"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
+            <!-- Project 4 -->
+            <div class="projects-card">
+              <div
+                class="card-img"
+                style="background-image: url('img/card4.svg')"
+              ></div>
+              <h3 class="card-field">Finance</h3>
+              <div class="card-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <p class="card-title">Capital Asset Pricing Modell</p>
+              <a href="add/MFCAPM.pdf" class="card-button" target="_blank">
+                <i class="fas fa-plus-circle fa-2x"></i>
+              </a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="projects-card">
+              <div
+                class="card-img"
+                style="background-image: url('img/card5.svg')"
+              ></div>
+              <h3 class="card-field">Data Analysis</h3>
+              <div class="card-icon">
+                <i class="fab fa-r-project"></i>
+              </div>
+              <p class="card-title">Zurich Air Quality</p>
+              <a
+                href="add/StatisticsAirQual.html"
+                class="card-button"
+                target="_blank"
+              >
+                <i class="fas fa-plus-circle fa-2x"></i>
+              </a>
+            </div>
           </div>
-          <div class="projects__data">
-            <img src="img/stat.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Data Analysis <br /><i class="fab fa-r-project"></i>
-            </h3>
-            <p class="projects-p">Zurich Air Quality</p>
-            <a
-              href="projects/StatisticsAirQual.html"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
+        </div>
       </section>
-
-
-      <!-- Minor Projects -->
-      <section class="projects section bd-container">
-        <h2 class="section-title">
-          Minor Projects
-        </h2>
-        <div class="projects__container bd-grid">
-          <div class="projects__data">
-            <img src="img/wm.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Data Analysis <br /><i class="fab fa-r-project"></i>
-            </h3>
-            <p class="projects-p">FIFA World Cup</p>
-            <a
-              href="projects/StatisticsFootball.html"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
-
-          <div class="projects__data">
-            <img src="img/shiny.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Programming <br /><i class="fab fa-r-project"></i>
-            </h3>
-            <p class="projects-p">Shiny Application</p>
-            <a
-              href="https://phibry.shinyapps.io/Ferienzeitapp/?_ga=2.155841403.1915511292.1609140530-2012528580.1609140530"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
-
-          <div class="projects__data">
-            <img src="img/coding.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Terminal Game <br />
-              <i class="fab fa-python"></i>
-            </h3>
-            <p class="projects-p">Tic Tac Toe</p>
-            <a
-              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/TicTacToe"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
-
-          <div class="projects__data">
-            <img src="img/blackjack.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Terminal Game <br />
-              <i class="fab fa-python"></i>
-            </h3>
-            <p class="projects-p">Black Jack</p>
-            <a
-              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/BlackJack"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
-
-          <div class="projects__data">
-            <img src="img/wallet.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Programming <br /><i class="fab fa-python"></i>
-            </h3>
-            <p class="projects-p">Bank Account</p>
-            <a
-              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/BankAccount"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
-
-          <div class="projects__data">
-            <img src="img/twitter.svg" alt="" class="projects__img" />
-            <h3 class="projects__title">
-              Programming <br /><i class="fab fa-python"></i>
-            </h3>
-            <p class="projects-p">Twitter Winner App</p>
-            <a
-              href="https://github.com/phibry/PyDoc/tree/main/Python%20Projects/TwitterApp"
-              class="button button-link"
-              target="_blank"
-            >
-              <i class="fas fa-plus-circle fa-2x"></i>
-            </a>
-          </div>
-      </section>
-
       <!-- Contact -->
-      <section class="contact section" id="contact">
-        <div class="contact__container bd-container bd-grid">
-          <div class="contact__content">
-            <h2 class="section-title-center contact__title">Contact Me</h2>
-            <p class="contact__description">
+      <section class="contact" id="contact">
+        <h2 class="contact-title-tablet">Contact me and say hello</h2>
+        <div class="container contact-container">
+          <div class="contact-content">
+            <h2 class="contact-title">Contact me and say hello</h2>
 
-              <a href="mailto:philipp.rieser@gmail.com"><i class="fas fa-envelope"></i></a>
-
-              <a href="tel:+41793725737"><i class="fas fa-phone "></i></a>
-
-              <br>
-
-
-              <!-- <i class="fas fa-envelope"></i> 
-              <a href="mailto:philipp.rieser@gmail.com">philipp.rieser@gmail.com</a>
-              <br>
-              <i class="fas fa-phone"></i>
-              <a href="tel:+41793725737">079 372 57 37</a>
-              <br>
-              <i class="fas fa-home"></i> Winterthur -->
-            </p>
-            <!-- <form
-              method="POST"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
-            > -->
-            <form
-            method="POST"
-            data-netlify="true"
-          >
-              <div class="contact__direction">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  class="contact__input"
-                  name="name"
-                />
+            <form method="POST" autocomplete="off">
+              <input type="hidden" name="form-name" value="form 1" />
+              <div class="contact-name contact-form">
+                <input type="text" class="contact-input" name="name" required />
+                <label for="name">Name</label>
               </div>
-              <div class="contact__direction">
+              <div class="contact-email contact-form">
                 <input
                   type="text"
-                  placeholder="Email"
-                  class="contact__input"
+                  class="contact-input"
                   name="email"
+                  required
                 />
+                <label for="email">Email</label>
               </div>
-              <div class="contact__direction">
-                <input
-                  type="text"
-                  placeholder="Message"
-                  class="contact__input"
+              <div class="contact-message contact-form">
+                <textarea
                   name="message"
-                />
-                <button type="submit" class="button">Submit</button>
+                  id="message"
+                  class="contact-input"
+                  maxlength="300"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
               </div>
-
-              <!-- <div class="contact__direction">
-                <div data-netlify-recaptcha="true"></div>
-              </div> -->
-              
+              <button type="submit" class="subbtn">Send Message</button>
             </form>
           </div>
 
-          <div class="contact__img"><img src="img/contact.svg" alt="" /></div>
+          <div class="contact-img">
+            <img src="img/contact2.svg" alt="contact" />
+          </div>
         </div>
       </section>
+
+      <!-- Footer -->
+      <footer class="footer container">
+        <div class="footer-info">
+          <div class="footer-phibry">
+            <h3>phibry</h3>
+            <ul>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">My Projects</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <a href="mailto:philipp.rieser@gmail.com"
+                  >philipp.rieser@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+41793725737">+41 79 372 57 37</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-icon">
+          <div class="footer-content">
+            <a
+              href="https://www.linkedin.com/in/phibry"
+              class="footer-social"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <a
+              href="https://github.com/phibry"
+              target="_blank"
+              class="footer-social"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a
+              href="https://twitter.com/phibry7"
+              target="_blank"
+              class="footer-social"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <p class="footer-copy">&#169; 2021 phibry</p>
+          </div>
+        </div>
+      </footer>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer section">
-      <div class="footer__container bd-container bd-grid">
-        <div class="footer__content">
-          <h3 class="footer__title">phibry</h3>
-          <ul>
-            <li><a href="#about" class="footer__link">About Me</a></li>
-            <li><a href="#projects" class="footer__link">My Projects</a></li>
-          </ul>
-        </div>
-
-        <!-- <div class="footer__content">
-          <h3 class="footer__title">Social</h3>
-          <a
-            href="https://www.linkedin.com/in/phibry"
-            class="footer__social"
-            target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://github.com/phibry"
-            target="_blank"
-            class="footer__social"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div> -->
-
-        <div class="footer__content">
-          <h3 class="footer__title">Contact</h3>
-          <ul>
-            <li><a href="mailto:philipp.rieser@gmail.com" class="footer__link">philipp.rieser@gmail.com </a></li>
-            <li><a href="tel:+41793725737" class="footer__link">079 372 57 37</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__content footer__social-icon">
-
-        <a
-          href="https://www.linkedin.com/in/phibry"
-          class="footer__social"
-          target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-
-        <a
-          href="https://github.com/phibry"
-          target="_blank"
-          class="footer__social"
-          ><i class="fab fa-github"></i
-        ></a>
-      
-
-      <p class="footer__copy">&#169; 2021 phibry</p>
-    </div>
-    </footer>
 
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- JS -->
-    <script src="js/main.js"></script>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
   </body>
 </html>
