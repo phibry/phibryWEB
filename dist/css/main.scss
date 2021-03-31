@@ -28,14 +28,12 @@ body.dark {
   --text-color-light: rgb(61, 61, 61);
   --scroll-color: #595959;
 
-  --circle-color-1: #fff;
-  --circle-color-2: #FEFBFB;
-
   --nav-color: rgb(24, 24, 24);
 
   --color-body: #2C2C2C;
 
   --button-contact-color: #7362ff;
+  --plus-btn-color: #fff;
 
   --shadow: none;
 }
@@ -88,7 +86,6 @@ section {
   z-index: 10;
   padding: 0.5rem;
   background: var(--scroll-color);
-  // background: #595959;
   opacity: 0.7;
   border-radius: 0.5rem;
   transition: 0.2s;
@@ -147,16 +144,16 @@ section {
 // Button
 .btn {
   display: inline-block;
-  background: var(--main-color-2);
+  background: var(--main-color-1);
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   color: var(--button-color);
   position: relative;
   margin-top: $m-3;
-  transition: background 0.4s;
+  transition: color 0.1s ease;
 
   &:hover {
-    background: var(--main-color-1);
+    color: rgb(190, 198, 248);
   }
 
   &::after {
@@ -437,7 +434,6 @@ section {
   &-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-template-columns: repeat(auto-fit, 1fr);
     row-gap: 1.5rem;
     column-gap: 1.5rem;
   }
@@ -547,15 +543,14 @@ section {
     }
 
     .card-button {
-      color: var(--circle-color-2);
+      color: var(--plus-btn-color);
   
-      .fa-plus-circle {
+      .fa-plus {
         margin-top: 40px;
         transition: all 100ms ease-in-out;
 
         &:hover {
           transform: rotate(45deg);
-          color: var(--circle-color-1);
         }
       }
     }
@@ -575,8 +570,8 @@ section {
       to right, 
       var(--container-color) 0%, 
       var(--container-color) 50%, 
-      var(--main-color-2) 50%, 
-      var(--main-color-2) 100%);
+      var(--main-color-1) 50%, 
+      var(--main-color-1) 100%);
     margin: 0 auto;
     display: grid;
     row-gap: 0.5rem;
@@ -678,21 +673,22 @@ section {
 
     button {
       display: inline-block;
-      background: var(--main-color-2);
+      background: var(--main-color-1);
       padding: 1rem 1.5rem;
       border-radius: 2rem;
       color: var(--button-color);
       position: relative;
       margin-top: $m-3;
-      transition: background 0.4s;
+      transition: color 0.1s ease;
       border: none;
       cursor: pointer;
     
       &:hover {
-        background: var(--main-color-1);
+        color: rgb(190, 198, 248);
       }
     }
   }
+
 
   &-img {
     justify-self: center;

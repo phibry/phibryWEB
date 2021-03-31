@@ -7,13 +7,12 @@
   --title-color: #1a1a1a;
   --text-color-dark: #4E4E51;
   --text-color-light: #fff;
-  --scroll-color: #3138D1;
+  --scroll-color: #000d9e;
   --button-color: #fff;
-  --circle-color-1: #3138D1;
-  --circle-color-2: #7362ff;
   --nav-color: #FEFBFB;
-  --color-body: #7362ff;
+  --color-body: #3138D1;
   --button-contact-color: #3138D1;
+  --plus-btn-color: #3138D1;
   --shadow: 0 3px 8px rgba(65, 11, 16, .15);
 }
 
@@ -41,11 +40,10 @@ body.dark {
   --text-color-dark: rgb(216, 216, 216);
   --text-color-light: rgb(61, 61, 61);
   --scroll-color: #595959;
-  --circle-color-1: #fff;
-  --circle-color-2: #FEFBFB;
   --nav-color: rgb(24, 24, 24);
   --color-body: #2C2C2C;
   --button-contact-color: #7362ff;
+  --plus-btn-color: #fff;
   --shadow: none;
 }
 
@@ -151,18 +149,18 @@ section {
 
 .btn {
   display: inline-block;
-  background: var(--main-color-2);
+  background: var(--main-color-1);
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   color: var(--button-color);
   position: relative;
   margin-top: 1.5rem;
-  -webkit-transition: background 0.4s;
-  transition: background 0.4s;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
 }
 
 .btn:hover {
-  background: var(--main-color-1);
+  color: #bec6f8;
 }
 
 .btn::after {
@@ -464,8 +462,6 @@ section {
   display: grid;
   -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  -ms-grid-columns: (1fr)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 1fr);
   row-gap: 1.5rem;
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
@@ -581,19 +577,18 @@ section {
 }
 
 .projects-card .card-button {
-  color: var(--circle-color-2);
+  color: var(--plus-btn-color);
 }
 
-.projects-card .card-button .fa-plus-circle {
+.projects-card .card-button .fa-plus {
   margin-top: 40px;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
-.projects-card .card-button .fa-plus-circle:hover {
+.projects-card .card-button .fa-plus:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  color: var(--circle-color-1);
 }
 
 .contact {
@@ -602,8 +597,8 @@ section {
 
 .contact-container {
   background-color: #eafbff;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--container-color)), color-stop(50%, var(--container-color)), color-stop(50%, var(--main-color-2)), to(var(--main-color-2)));
-  background-image: linear-gradient(to right, var(--container-color) 0%, var(--container-color) 50%, var(--main-color-2) 50%, var(--main-color-2) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--container-color)), color-stop(50%, var(--container-color)), color-stop(50%, var(--main-color-1)), to(var(--main-color-1)));
+  background-image: linear-gradient(to right, var(--container-color) 0%, var(--container-color) 50%, var(--main-color-1) 50%, var(--main-color-1) 100%);
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -714,20 +709,20 @@ section {
 
 .contact-content button {
   display: inline-block;
-  background: var(--main-color-2);
+  background: var(--main-color-1);
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   color: var(--button-color);
   position: relative;
   margin-top: 1.5rem;
-  -webkit-transition: background 0.4s;
-  transition: background 0.4s;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
   border: none;
   cursor: pointer;
 }
 
 .contact-content button:hover {
-  background: var(--main-color-1);
+  color: #bec6f8;
 }
 
 .contact-img {
