@@ -18,8 +18,8 @@ body {
 }
 
 body.dark {
-  --container-color: #2C2C2C;
-  --body-color: #111;
+  --container-color: #39414b;
+  --body-color: #22272E;
   --main-color-1: #3138D1;
   --main-color-2: #7362ff;
   --main-color-3: #000d9e;
@@ -28,15 +28,17 @@ body.dark {
   --text-color-light: rgb(61, 61, 61);
   --scroll-color: #595959;
 
-  --nav-color: rgb(24, 24, 24);
+  --nav-color: #2D333B;
 
-  --color-body: #2C2C2C;
+  --color-body: #39414b;
 
   --button-contact-color: #7362ff;
   --plus-btn-color: #fff;
 
   --shadow: none;
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -580,7 +582,7 @@ section {
     align-items: center;
     padding: 0 2rem 7rem 0;
 
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--contact-shadow);
     padding: 2rem;
     border-radius: 1.5rem;
   }
