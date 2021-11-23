@@ -81,21 +81,21 @@ const changeContent = (e) => {
   switch (e.target.classList[1]) {
     case 'life':
       aboutP.innerHTML =
-        'I am interested in technology and a sustainable future. In addition to my studies, I am actively involved in sports and continue my education in the areas of Web Development and Data Science.';
+        'I am interested in technology and a sustainable future. I am actively involved in sports and continue my education in the areas of Web Development and Data Science.';
       aboutP.classList.add('show');
       aboutImg.childNodes[1].src = 'img/life.svg';
       break;
 
     case 'edu':
       aboutP.innerHTML =
-        'I am currently studying Engineering & Management at the ZHAW School of Engineering in Winterthur ZH. The focus of my studies is on applied mathematics and statistics.';
+        'I studied applied mathematics at the ZHAW School of Engineering. The focus was on data science, statistics and computer science.';
       aboutP.classList.add('show');
       aboutImg.childNodes[1].src = 'img/education.svg';
       break;
 
     case 'exp':
       aboutP.innerHTML =
-        'I worked as an electrician for several years and was mainly involved in service work and reconstruction. This activity promoted my precise and customer-oriented way of working as well as leading work colleagues.';
+        'I worked as an electrician for several years and was mainly involved in service work and reconstruction. This activity promoted my precise and customer-oriented way of working as well as leading work colleagues. I currently work as a software engineer.';
       aboutP.classList.add('show');
       aboutImg.childNodes[1].src = 'img/experience.svg';
       break;
