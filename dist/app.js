@@ -95,7 +95,7 @@ const changeContent = (e) => {
 
     case 'exp':
       aboutP.innerHTML =
-        'I worked as an electrician for several years and was mainly involved in service work and reconstruction. This activity promoted my precise and customer-oriented way of working as well as leading work colleagues. I currently work as a software engineer.';
+        'I worked as an electrician for several years. This activity promoted my precise and customer-oriented way of working as well as leading work colleagues. I currently work as a software engineer.';
       aboutP.classList.add('show');
       aboutImg.childNodes[1].src = 'img/experience.svg';
       break;
